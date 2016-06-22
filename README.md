@@ -13,7 +13,7 @@ Workers organize The Chord Ring which will determine responsibility for storing 
 2. For each chunk info, send M requests to workers and wait for the first chunk to arrive. Send arrived chunk to the client
 
 
-Javascript is used as DSL. [Context](https://github.com/alexsderkach/datastore/blob/master/server/src/main/java/io/datastore/server/execution/scripting/Context.java) and (StreamContext)[https://github.com/alexsderkach/datastore/blob/master/server/src/main/java/io/datastore/server/execution/scripting/StreamContext.java] provide an API for data manipulation. Supported operations:
+Javascript is used as DSL. [Context](https://github.com/alexsderkach/datastore/blob/master/server/src/main/java/io/datastore/server/execution/scripting/Context.java) and [StreamContext](https://github.com/alexsderkach/datastore/blob/master/server/src/main/java/io/datastore/server/execution/scripting/StreamContext.java) provide an API for data manipulation. Supported operations:
 - map
 - filter
 - reduce
