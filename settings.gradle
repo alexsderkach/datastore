@@ -1,0 +1,6 @@
+rootProject.name = 'app'
+include 'server'
+include 'agent'
+include 'worker'
+include 'common'
+

@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+mainClassName = 'io.datastore.server.Main'
+
+dependencies {
+    compile project(":common")
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
